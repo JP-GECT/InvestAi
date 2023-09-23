@@ -10,13 +10,14 @@ const openai = new OpenAI({
 });
 
 async function sendMessage(data) {
+    const Data = data['User Information']
   
-  console.log(data)
+  console.log(Data)
   try {
  
     const response = await openai.completions.create({
       model: 'gpt-3.5-turbo-instruct',
-      prompt: ` my name is Nived,Annual income is 15lakh, I prefer saving-type investments, I'm 20 years old, I live in mumbai , I have a current debt of 3LAKH with a 10% interest rate that i have to repay in 3 years, and I dont have a family 
+      prompt: ` my name is ${Data.Name},Annual income is ${Data['Annual Income']}, I prefer saving-type investments, I'm ${Data.Age} years old, I live in ${Data.Location} , I have a current debt of ${Data.Debt.Amount} with a ${Data.Debt['Interest Rate']}% interest rate that i have to repay in 3 years, and I have ${Data.Family} family 
       now return a json of the format : {
           "User Information": {
              "Age": 30,
