@@ -1,0 +1,22 @@
+{
+  "name": "investai",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r <img align=\"center\" src=\"https://github.com/JP-GECT/InvestAi/assets/100013491/837a1f1d-efbb-4d21-b146-87f8a23cfd24\" alt=\"Image Description\" width=\"YOUR_WIDTH\" height=\"YOUR_HEIGHT\">\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "openai": "^4.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
