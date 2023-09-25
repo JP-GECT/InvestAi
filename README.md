@@ -30,7 +30,7 @@
 
 # How we Implement it:
 <p>
-  InvestAI will consist of two key components: the backend and frontend. The backend will be responsible for data processing, portfolio optimization using AI models, user authentication, and database management. It will provide an API for communication with the frontend.</p>
+ The backend will be responsible for data processing, portfolio optimization using AI models, user authentication, and database management. It will provide an API for communication with the frontend.</p>
   <p>
  The frontend, will be the user interface where individuals input their financial details like risk factor,duration etc, we also provide references to  educational content, and receive personalized investment recommendations.
 
